@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <title>Codificador de Texto</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
     <main>
 
         <section>
-            <textarea class="input-texto" cols="30" rows="10" placeholder="digite seu texto:"></textarea>
+            <textarea class="input-texto" cols="30" rows="8" placeholder="digite seu texto:"></textarea>
             <div>
                 <h6 class="informacao"> Apenas letras minúsculas e sem acento </h6>
             </div>
@@ -35,7 +36,9 @@
         </section>
 
         <section class="mensagem-box">
-            <textarea class="mensagem" cols="30" rows="10"></textarea>
+            <textarea class="mensagem" cols="30" rows="8"></textarea>
+            <p class="mensagem-aviso">Nenhuma mensagem encontrada</p>
+            <p class="mensagem-espera">Digite um texto que você deseja criptografar ou descriptografar.</p>
             <div id="div-aparece">
                 <button class="copiar" onclick="copiar()">Copiar</button>
             </div>
